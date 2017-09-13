@@ -12,4 +12,9 @@ public class IntsTests {
         assertEquals(-1, Ints.max(-1,-2));
         assertEquals(-1, Ints.max(-2,-1));
     }
+
+    @Test
+    public void explicitNonFailure() {
+        assertEquals(6, 1+5);
+    }
 }
