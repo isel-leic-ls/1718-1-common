@@ -6,9 +6,8 @@ import org.eclipse.jetty.servlet.ServletHolder;
 import org.postgresql.ds.PGSimpleDataSource;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import pt.isel.ls.http.TimeServlet;
 
-public class HttpServer {
+public class HerokuServer {
 
     /* 
      * TCP port where to listen. 
@@ -20,7 +19,7 @@ public class HttpServer {
 
         System.setProperty("org.slf4j.simpleLogger.levelInBrackets", "true");
 
-        Logger logger = LoggerFactory.getLogger(HttpServer.class);
+        Logger logger = LoggerFactory.getLogger(HerokuServer.class);
         logger.info("Starting main...");
 
         String portDef = System.getenv("PORT");
